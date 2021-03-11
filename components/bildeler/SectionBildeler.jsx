@@ -12,7 +12,9 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     margin: '8rem 0 5rem 0',
     flexDirection: 'row',
-    [theme.breakpoints.down('md')]: {},
+    [theme.breakpoints.down([1400])]: {
+      width: '90vw',
+    },
     [theme.breakpoints.down('xs')]: {
       margin: '2rem 0 2rem 0',
     },
@@ -30,10 +32,13 @@ const useStyles = makeStyles((theme) => ({
   img: {
     maxHeight: '100%',
     maxWidth: '100%',
-    [theme.breakpoints.down([1300])]: {
+    [theme.breakpoints.down([1400])]: {
       marginLeft: '1rem',
+      maxHeight: '23rem',
     },
     [theme.breakpoints.down('md')]: {
+      maxHeight: '100%',
+      maxWidth: '100%',
       marginTop: '3rem',
       marginLeft: 0,
     },

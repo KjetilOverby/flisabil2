@@ -34,7 +34,7 @@ const LogoSection = () => {
         <Grid item>
           <img
             className={classes.bilxtraLogo}
-            src="https://lh3.googleusercontent.com/proxy/HjJPrOK_2BSMivkF8D4Ca6eMlmEHLJ_BKxUPEkc_M4x2GMyqQv1eyY5RxF_Su1SXyxqWyCETXa2CoTGPY9bdXjFWySyX7y3jDqMwgkQpR-xU9A"
+            src="https://lh3.googleusercontent.com/pw/ACtC-3d6HxnacznQioFhcaub3YOLVKVy_hgLjG3bzbL4x6yYaTXpiPs8OoA-aO-JJVdJTsHB81mM_aNa5-S8CCUomjOxzyhZODo9MmtwhTlVq2F3yohp7TuRXdd5F270_Bbx-WNLdCcmiZovgGJMZHTcCID8=w501-h100-no?authuser=0"
             alt="Bilxtra logo"
           />
         </Grid>
