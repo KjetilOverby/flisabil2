@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import Head from 'next/head';
 import { ThemeProvider } from '@material-ui/core/styles';
@@ -7,7 +7,7 @@ import theme from '../src/theme';
 
 export default function MyApp(props) {
   const { Component, pageProps } = props;
-
+  const [title, setTitle] = useState();
   React.useEffect(() => {
     // Remove the server-side injected CSS.
     const jssStyles = document.querySelector('#jss-server-side');
@@ -19,7 +19,8 @@ export default function MyApp(props) {
   return (
     <React.Fragment>
       <Head>
-        <title>Flisa bil</title>
+        <title>{title}</title>
+
         <meta
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width"
@@ -32,7 +33,7 @@ export default function MyApp(props) {
       <ThemeProvider theme={theme}>
         {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
         <CssBaseline />
-        <Component {...pageProps} />
+        <Component {...pageProps} setTitle={setTitle} />
       </ThemeProvider>
     </React.Fragment>
   );

@@ -5,7 +5,7 @@ import SectionBildeler from '../components/bildeler/SectionBildeler';
 import FooterComponent from '../components/common-components/FooterComponent';
 
 const useStyles = makeStyles((theme) => ({}));
-const bildeler = () => {
+const bildeler = ({ setTitle }) => {
   const classes = useStyles();
   return (
     <div
@@ -15,7 +15,7 @@ const bildeler = () => {
         minHeight: '100vh',
       }}
     >
-      <BildelerStartPage />
+      <BildelerStartPage setTitle={setTitle} />
       <SectionBildeler />
       <FooterComponent />
     </div>

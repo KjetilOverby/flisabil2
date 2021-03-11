@@ -48,26 +48,46 @@ const TextBox = () => {
     <Grid container className={classes.container}>
       <Grid item>
         <Typography className={classes.text} variant="body1">
-          Midt mellom Kongsvinger og Elverum ligger Flisa Bil AS i Negardsvn 8
-          NÆR Flisa sentrum vis a vis Politistasjonen/KLUBBEN/MAXBO.
+          Midt mellom Kongsvinger og Elverum ligger Flisa Bil AS i Negardsvn 8 i
+          Flisa sentrum.
         </Typography>
         <br />
-        <Typography className={classes.text} variant="body1">
-          Vi driver med kjøp og salg av alle typer biler, bilverksted for alle
-          merker, periodisk kjøretøykontroll, alt innen glasskader og
-          frontruter, service, ac fylling, diagnoser, 4-hjulsmåling, småskader,
-          osv.
-        </Typography>
-        <br />
-        <Typography className={classes.text} variant="body1">
-          Våren 2011 ble vi Bilxtra butikk, med nyoppussede lokaler og økt
-          vareutvalg. Som bildels GROSSIST kan vi tilby gode rabatter til deg
-          som kunde eller til deg som driver eget verksted.
-        </Typography>
-        <br />
-        <Typography className={classes.text} variant="body1">
-          Vi har også utleiebiler.
-        </Typography>
+        <ul>
+          <li>
+            <Typography className={classes.text} variant="body1">
+              Kjøp og salg av alle typer bruktbiler
+            </Typography>
+            <Typography className={classes.text} variant="body1">
+              (Vi er godkjent som autoreg forhandler av Statens Vegevesen, dette
+              gjør at vi kan omregistrere og levere biler umiddelbart.)
+            </Typography>
+          </li>
+          <li>
+            <Typography className={classes.text} variant="body1">
+              Bilxtra verksted
+            </Typography>
+          </li>
+          <li>
+            <Typography className={classes.text} variant="body1">
+              Bilxtra butikk
+            </Typography>
+          </li>
+          <li>
+            <Typography className={classes.text} variant="body1">
+              Periodisk kjøretøykontroll/EU kontroll
+            </Typography>
+          </li>
+          <li>
+            <Typography className={classes.text} variant="body1">
+              Godkjent av Statens Vegevesen
+            </Typography>
+          </li>
+          <li>
+            <Typography className={classes.text} variant="body1">
+              Medlem av Norges bilbransjeforbund
+            </Typography>
+          </li>
+        </ul>
       </Grid>
     </Grid>
   );

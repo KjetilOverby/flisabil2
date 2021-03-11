@@ -21,6 +21,7 @@ import {
 import MenuIcon from '@material-ui/icons/Menu';
 import Link from 'next/link';
 import Logo from './Logo';
+import Logo2 from './Logo2';
 
 function HideOnScroll(props) {
   const { children, window } = props;
@@ -37,7 +38,11 @@ function HideOnScroll(props) {
 }
 
 const HeaderComponent = (props) => {
-  const [tabcolor, setTabcolor] = useState();
+  const [home, setHome] = useState();
+  const [bruktbiler, setBruktbiler] = useState();
+  const [verksted, setVerksted] = useState();
+  const [kontakt, setKontakt] = useState();
+  const [tabcolor, setTabcolor] = useState('#fff');
   const useStyles = makeStyles((theme) => ({
     header: {
       height: '10rem',
@@ -67,6 +72,7 @@ const HeaderComponent = (props) => {
     tabContainer: {
       display: 'flex',
       justifyContent: 'center',
+      position: 'relative',
 
       '&:last-child': {
         marginRight: '2rem',
@@ -122,6 +128,18 @@ const HeaderComponent = (props) => {
       padding: '.7rem 0',
       fontStyle: 'italic',
     },
+    home: {
+      color: home,
+    },
+    bruktbiler: {
+      color: bruktbiler,
+    },
+    verksted: {
+      color: verksted,
+    },
+    kontakt: {
+      color: kontakt,
+    },
   }));
   const classes = useStyles();
   const themes = useTheme();
@@ -137,29 +155,20 @@ const HeaderComponent = (props) => {
   const changeActiveTab = (e, value) => {
     setActiveTab(value);
   };
+  const tabColors = '#cca880';
   useEffect(() => {
     if (window.location.pathname === '/') {
-      setTabcolor('white');
-    } else if (window.location.pathname === '/bedrift') {
-      setTabcolor('white');
-    } else if (window.location.pathname === '/mobil') {
-      setTabcolor('white');
-    } else if (window.location.pathname === '/support') {
-      setTabcolor('white');
-    } else if (window.location.pathname === '/kontakt' && activeTab !== 4) {
-      setActiveTab(4);
-    } else if (window.location.pathname === '/stilling' && activeTab !== 5) {
-      setActiveTab(5);
-    } else if (
-      window.location.pathname === '/salgsbetingelser' &&
-      activeTab !== 5
-    ) {
-      setActiveTab(5);
-    } else if (
-      window.location.pathname === '/slipeservice' &&
-      activeTab !== 5
-    ) {
-      setActiveTab(5);
+      props.setTitle('Forside | FLISA BIL AS');
+      setHome(tabColors);
+    } else if (window.location.pathname === '/bruktbiler') {
+      props.setTitle('Bruktbiler | FLISA BIL AS');
+      setBruktbiler(tabColors);
+    } else if (window.location.pathname === '/bildeler') {
+      props.setTitle('Verksted | FLISA BIL AS');
+      setVerksted(tabColors);
+    } else if (window.location.pathname === '/kontakt') {
+      props.setTitle('Kontakt | FLISA BIL AS');
+      setKontakt(tabColors);
     }
   }, [activeTab]);
 
@@ -180,25 +189,38 @@ const HeaderComponent = (props) => {
       onChange={changeActiveTab}
       indicatorColor="transparent"
     >
-      <Link href="/">
+      <a href="/">
         <Logo />
-      </Link>
+      </a>
+
       <Link href="/">
-        <Tab className={classes.tab} label="hjem" />
+        <Tab className={`${classes.tab} ${classes.home}`} label="hjem" />
       </Link>
 
       <Link href="/bruktbiler">
-        <Tab className={classes.tab} label="bruktbiler" />
+        <Tab
+          className={`${classes.tab} ${classes.bruktbiler}`}
+          label="bruktbiler"
+        />
       </Link>
       <Link href="/bildeler">
-        <Tab className={classes.tab} label="service" />
+        <Tab
+          className={`${classes.tab} ${classes.verksted}`}
+          label="verksted"
+        />
       </Link>
       <Link href="https://bilxtra.no">
-        <Tab className={classes.tab} label="Bilxtra" />
+        <Tab className={`${classes.tab}`} label="Bilxtra" />
       </Link>
       <Link href="/kontakt">
-        <Tab className={classes.tab} label="Kontakt oss" />
+        <Tab
+          className={`${classes.tab} ${classes.kontakt}`}
+          label="Kontakt oss"
+        />
       </Link>
+      <a href="https://bilxtra.no/">
+        <Logo2 />
+      </a>
 
       {/* <Tab
         aria-controls="simple-menu"

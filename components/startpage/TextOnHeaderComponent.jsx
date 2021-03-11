@@ -13,11 +13,12 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down('xs')]: {},
   },
   header: {
-    color: '#cfbaba',
+    color: '#d6d6d6',
     fontWeight: '400',
     marginRight: '1.5rem',
     fontStyle: 'italic',
     fontWeight: 'bold',
+    fontSize: '5.5rem',
     [theme.breakpoints.down('md')]: {
       fontSize: '4.5rem',
     },

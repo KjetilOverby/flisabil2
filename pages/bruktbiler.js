@@ -5,11 +5,11 @@ import FooterComponent from '../components/common-components/FooterComponent';
 import SectionBruktbiler from '../components/bruktbiler/SectionBruktbiler';
 
 const useStyles = makeStyles((theme) => ({}));
-const bruktbiler = () => {
+const bruktbiler = ({ setTitle }) => {
   const classes = useStyles();
   return (
     <div>
-      <BruktbilerStartPage />
+      <BruktbilerStartPage setTitle={setTitle} />
       <SectionBruktbiler />
       <FooterComponent />
     </div>

@@ -3,18 +3,15 @@ import { Grid, makeStyles, Typography } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
   container: {
-    marginTop: '2rem',
+    marginTop: '1rem',
     display: 'flex',
     flexDirection: 'column',
   },
   logo: {
-    height: '2rem',
-    marginRight: '10rem',
+    height: '5rem',
+    marginLeft: '10rem',
     [theme.breakpoints.down([1600])]: {
-      marginRight: '3rem',
-    },
-    [theme.breakpoints.down([1400])]: {
-      marginRight: '1rem',
+      marginLeft: '3rem',
     },
   },
   logo2: {
@@ -24,14 +21,14 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const Logo = () => {
+const Logo2 = () => {
   const classes = useStyles();
   return (
     <Grid container className={classes.container}>
       <Grid item>
         <img
           className={classes.logo}
-          src="https://lh3.googleusercontent.com/pw/ACtC-3ciOjsXUiLhykYRyHY60jTVfPMsvPsoPrXG0I_cwe6BVF5cnKTdwXvXi9Lbn3aYt8vUuSAK_RSWKA02TSaS5lUGocPkNqM94aTO7_bn4jENDRUCiaO_lho7Inmo0iPoYaTyslW3yREN3Nn7lqkR2E0a=w837-h183-no?authuser=0"
+          src="https://lh3.googleusercontent.com/pw/ACtC-3fpZgF-maBHdFMXlTZVczrVHV8d4pEGvUnVA9mgNa7yOL1ZPmHdfO0Ts_ZRFxlpWsi64UFNHDA8JM4zdTnOgpLNLWMiOAAAFhUAhy67_6z6G8B9Hgp4mZ7FfRV7bAWDXcqUORNg4QAyzKBlYOkVndgV=w887-h400-no?authuser=0"
           alt=""
         />
       </Grid>
@@ -54,4 +51,4 @@ const Logo = () => {
   );
 };
 
-export default Logo;
+export default Logo2;

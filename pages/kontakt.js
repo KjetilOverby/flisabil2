@@ -11,12 +11,11 @@ const useStyles = makeStyles((theme) => ({
     minHeight: '100vh',
   },
 }));
-const kontakt = () => {
+const kontakt = ({ setTitle }) => {
   const classes = useStyles();
   return (
     <div className={classes.container}>
-      <KontaktPage />
-      <KontaktSection />
+      <KontaktPage setTitle={setTitle} />
       <FooterComponent />
     </div>
   );

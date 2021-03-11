@@ -64,6 +64,14 @@ const SectionBildeler = () => {
                     bildeler, og andre slitedeler fra 1-4 virkedager.
                   </Typography>
                 </li>
+                <li>
+                  <Typography variant="body1">
+                    Vi har samme pris i butikk som på{' '}
+                    <a target="_blank" href="https://bilxtra.no/bildelernav">
+                      nett
+                    </a>
+                  </Typography>
+                </li>
               </ul>
             </Grid>
             <Grid item>
@@ -76,9 +84,19 @@ const SectionBildeler = () => {
               </Typography>
               <Typography variant="body1">
                 Flisa bil tilbyr reparasjon og service på alle type biler.Vi har
-                det siste innen diagnoseverktøy, spesialverktøy og
-                verkstedutstyr slik at din bil får 100 % oppfølging og pleie når
-                den er på vårt verksted.
+                diagnoseverktøy, spesialverktøy og verkstedutstyr slik at din
+                bil får god oppfølging og pleie når den er på vårt verksted.
+              </Typography>
+              <br />
+              <Typography variant="body1">
+                Vi tilbyr også finansiering/delbetaling rentefritt i 12 mnd. med
+                <a
+                  style={{ marginLeft: '.5rem' }}
+                  href="https://bilxtra.no/bilxtra-konto-brosjyre/"
+                  target="_blank"
+                >
+                  Bilxtra konto.
+                </a>
               </Typography>
             </Grid>
           </Grid>
