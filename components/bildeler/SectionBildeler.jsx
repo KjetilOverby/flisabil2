@@ -12,10 +12,10 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     margin: '8rem 0 5rem 0',
     flexDirection: 'row',
+    [theme.breakpoints.down('md')]: {},
     [theme.breakpoints.down('xs')]: {
       margin: '2rem 0 2rem 0',
     },
-    [theme.breakpoints.down('md')]: {},
   },
   containerTag: {
     flexGrow: 1,
@@ -30,15 +30,19 @@ const useStyles = makeStyles((theme) => ({
   img: {
     maxHeight: '100%',
     maxWidth: '100%',
-    [theme.breakpoints.down('xs')]: {
+    [theme.breakpoints.down([1300])]: {
+      marginLeft: '1rem',
+    },
+    [theme.breakpoints.down('md')]: {
       marginTop: '3rem',
+      marginLeft: 0,
     },
   },
   textContainer: {},
 }));
 const SectionBildeler = () => {
   const classes = useStyles();
-  const isMobile = useMediaQuery('(min-width:800px)');
+  const isMobile = useMediaQuery('(min-width:1300px)');
   return (
     <Container maxWidth="lg" className={classes.containerTag}>
       <Grid container className={classes.container} spacing={isMobile ? 8 : 0}>

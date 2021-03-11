@@ -6,6 +6,7 @@ import {
   Typography,
   useMediaQuery,
 } from '@material-ui/core';
+import LogoSection from './LogoSection';
 
 const useStyles = makeStyles((theme) => ({
   container: {
@@ -17,17 +18,15 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    marginTop: '20rem',
-    marginBottom: '10rem',
+    marginTop: '5rem',
+    marginBottom: '6rem',
     [theme.breakpoints.down([1999])]: {
-      marginTop: '25rem',
+      marginTop: '7rem',
     },
     [theme.breakpoints.down('md')]: {
-      marginTop: '25rem',
       marginBottom: '5rem',
     },
     [theme.breakpoints.down('sm')]: {
-      marginTop: 0,
       marginBottom: 0,
     },
     [theme.breakpoints.down('xs')]: {
@@ -40,7 +39,7 @@ const useStyles = makeStyles((theme) => ({
       width: '40vw',
     },
     [theme.breakpoints.down('sm')]: {
-      width: '100vw',
+      width: '100%',
     },
   },
 }));

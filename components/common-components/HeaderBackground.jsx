@@ -35,6 +35,7 @@ const BackgroundHeaderCompnent = ({
       },
       [theme.breakpoints.down('sm')]: {
         backgroundPosition: 'calc(100% - 0) calc(100% - 50px)',
+        height: '17rem',
       },
       [theme.breakpoints.down('xs')]: {
         background: bgImageMobile,

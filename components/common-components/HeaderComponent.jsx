@@ -346,6 +346,7 @@ const HeaderComponent = (props) => {
           <Toolbar className={classes.header}>
             <Hidden lgUp>
               <Logo />
+              <Logo2 />
             </Hidden>
             {matches ? drawer : tabs}
           </Toolbar>

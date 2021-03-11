@@ -1,5 +1,6 @@
 import React from 'react';
 import FooterComponent from '../components/common-components/FooterComponent';
+import LogoSection from '../components/startpage/LogoSection';
 import SectionStartPage from '../components/startpage/SectionStartPage';
 
 import StartPageComponent from '../components/startpage/StartPageComponent';
@@ -16,7 +17,9 @@ export default function Index({ setTitle }) {
     >
       <StartPageComponent setTitle={setTitle} />
       <TextBox />
+      <LogoSection />
       <SectionStartPage />
+
       <FooterComponent />
     </div>
   );

@@ -6,6 +6,9 @@ const useStyles = makeStyles((theme) => ({
     marginTop: '2rem',
     display: 'flex',
     flexDirection: 'column',
+    [theme.breakpoints.down('xs')]: {
+      marginTop: '-3rem',
+    },
   },
   logo: {
     height: '2rem',
@@ -16,11 +19,9 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down([1400])]: {
       marginRight: '1rem',
     },
-  },
-  logo2: {
-    height: '4rem',
-    marginTop: '-1.3rem',
-    marginLeft: '-.4rem',
+    [theme.breakpoints.down('xs')]: {
+      height: '1.5rem',
+    },
   },
 }));
 
