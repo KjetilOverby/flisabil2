@@ -40,7 +40,7 @@ const BackgroundHeaderCompnent = ({
       [theme.breakpoints.down('xs')]: {
         background: bgImageMobile,
         backgroundAttachment: 'initial',
-        height: '20vh',
+        height: '15rem',
         backgroundPosition: backgroundPositionMobile,
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',

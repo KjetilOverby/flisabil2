@@ -23,7 +23,7 @@ const StartPageComponent = ({ setTitle }) => {
       backgroundPositionXL="calc(100% - 0px) calc(100% - 130px)"
       backgroundPosition1999="calc(100% - 0px) calc(100%  - 55px)"
       backgroundPositionLG="calc(100% - 0px) calc(100%  - 55px)"
-      bgImageMobile='linear-gradient(rgba(16, 14, 255, 0.6), rgba(1, 5, 2, .4)), url("https://lh3.googleusercontent.com/pw/ACtC-3fi07IEt_Xd5KGp2rc064StKKfdVFA9MBKverEoLkmmVe3vKdX9slF1p17ZcC01TRaocz5obK7eYgPQTtPsSUYtoVUHaDbFgK7gZw4o-NyPMRP9HkxjbjEjWNGH4aoKeXVCX1nejxlfz3WZlH6pw_a2=w1621-h1080-no?authuser=0")'
+      bgImageMobile='linear-gradient(#000000,rgba(40, 1, 1, .4), rgba(260, 150, 233, .1)), url("https://lh3.googleusercontent.com/pw/ACtC-3fi07IEt_Xd5KGp2rc064StKKfdVFA9MBKverEoLkmmVe3vKdX9slF1p17ZcC01TRaocz5obK7eYgPQTtPsSUYtoVUHaDbFgK7gZw4o-NyPMRP9HkxjbjEjWNGH4aoKeXVCX1nejxlfz3WZlH6pw_a2=w1621-h1080-no?authuser=0")'
       backgroundPositionMobile="0"
       height="70vh"
     >

@@ -99,15 +99,12 @@ const HeaderComponent = (props) => {
         paddingLeft: '4rem',
       },
       [theme.breakpoints.down('md')]: {
-        height: '6em',
+        height: '3em',
         paddingLeft: '1rem',
       },
       [theme.breakpoints.down('xs')]: {
         height: '3em',
         paddingLeft: '1rem',
-      },
-      [theme.breakpoints.down('md')]: {
-        height: '3em',
       },
     },
     drawerIconContainer: {

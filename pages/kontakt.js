@@ -1,9 +1,8 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { makeStyles } from '@material-ui/core';
 import KontaktPage from '../components/kontakt/KontaktPage';
-import KontaktSection from '../components/kontakt/KontaktSection';
 import FooterComponent from '../components/common-components/FooterComponent';
-
+import ReactGA from 'react-ga';
 const useStyles = makeStyles((theme) => ({
   container: {
     display: ' flex',
@@ -13,6 +12,10 @@ const useStyles = makeStyles((theme) => ({
 }));
 const kontakt = ({ setTitle }) => {
   const classes = useStyles();
+  useEffect(() => {
+    ReactGA.initialize('UA-192063702-1');
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
   return (
     <div className={classes.container}>
       <KontaktPage setTitle={setTitle} />

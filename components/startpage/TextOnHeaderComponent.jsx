@@ -27,7 +27,7 @@ const useStyles = makeStyles((theme) => ({
       marginRight: '.7rem',
     },
     [theme.breakpoints.down('xs')]: {
-      fontSize: '2rem',
+      fontSize: '1.5rem',
       marginRight: '.5rem',
       color: '#ffffff',
       marginTop: '5rem',

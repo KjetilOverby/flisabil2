@@ -19,6 +19,9 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down('xs')]: {
       height: '3rem',
     },
+    [theme.breakpoints.down([350])]: {
+      height: '2rem',
+    },
   },
   logo2: {
     height: '4rem',
