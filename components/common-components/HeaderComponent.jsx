@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 import {
   AppBar,
   Toolbar,
@@ -17,11 +17,11 @@ import {
   Menu,
   MenuItem,
   Hidden,
-} from '@material-ui/core';
-import MenuIcon from '@material-ui/icons/Menu';
-import Link from 'next/link';
-import Logo from './Logo';
-import Logo2 from './Logo2';
+} from "@material-ui/core";
+import MenuIcon from "@material-ui/icons/Menu";
+import Link from "next/link";
+import Logo from "./Logo";
+import Logo2 from "./Logo2";
 
 function HideOnScroll(props) {
   const { children, window } = props;
@@ -42,88 +42,88 @@ const HeaderComponent = (props) => {
   const [bruktbiler, setBruktbiler] = useState();
   const [verksted, setVerksted] = useState();
   const [kontakt, setKontakt] = useState();
-  const [tabcolor, setTabcolor] = useState('#fff');
+  const [tabcolor, setTabcolor] = useState("#fff");
   const useStyles = makeStyles((theme) => ({
     header: {
-      height: '10rem',
+      height: "10rem",
       [theme.breakpoints.down([1990])]: {
-        height: '7rem',
+        height: "7rem",
       },
 
-      [theme.breakpoints.down('md')]: {
-        height: '8em',
-        width: '100vw',
+      [theme.breakpoints.down("md")]: {
+        height: "8em",
+        width: "100vw",
       },
-      [theme.breakpoints.down('xs')]: {
-        height: '7em',
+      [theme.breakpoints.down("xs")]: {
+        height: "7em",
       },
     },
     appbar: {
       zIndex: 1,
-      boxShadow: 'none',
-      backgroundColor: 'transparent',
-      display: 'flex',
-      justifyContent: 'center',
-      alignItems: 'center',
-      [theme.breakpoints.down('sm')]: {
-        alignItems: 'space-evenly',
+      boxShadow: "none",
+      backgroundColor: "transparent",
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+      [theme.breakpoints.down("sm")]: {
+        alignItems: "space-evenly",
       },
     },
     tabContainer: {
-      display: 'flex',
-      justifyContent: 'center',
-      position: 'relative',
+      display: "flex",
+      justifyContent: "center",
+      position: "relative",
 
-      '&:last-child': {
-        marginRight: '2rem',
+      "&:last-child": {
+        marginRight: "2rem",
       },
     },
     tab: {
       color: tabcolor,
       ...theme.typography.tab,
-      [theme.breakpoints.down('lg')]: {
-        marginLeft: '1px',
-        fontSize: '0.9rem',
+      [theme.breakpoints.down("lg")]: {
+        marginLeft: "1px",
+        fontSize: "0.9rem",
       },
     },
     drawerIcon: {
-      height: '40px',
-      width: '60px;',
+      height: "40px",
+      width: "60px;",
       color: theme.palette.secondary.main,
     },
     logo: {
-      height: '4rem',
-      paddingLeft: '4rem',
-      [theme.breakpoints.down('lg')]: {
-        height: '3em',
-        paddingLeft: '4rem',
+      height: "4rem",
+      paddingLeft: "4rem",
+      [theme.breakpoints.down("lg")]: {
+        height: "3em",
+        paddingLeft: "4rem",
       },
-      [theme.breakpoints.down('md')]: {
-        height: '3em',
-        paddingLeft: '1rem',
+      [theme.breakpoints.down("md")]: {
+        height: "3em",
+        paddingLeft: "1rem",
       },
-      [theme.breakpoints.down('xs')]: {
-        height: '3em',
-        paddingLeft: '1rem',
+      [theme.breakpoints.down("xs")]: {
+        height: "3em",
+        paddingLeft: "1rem",
       },
     },
     drawerIconContainer: {
-      width: '1rem',
-      margin: '0 2rem 0 2rem',
-      '&:hover': {
-        background: 'transparent',
+      width: "1rem",
+      margin: "0 2rem 0 2rem",
+      "&:hover": {
+        background: "transparent",
       },
     },
     drawer: {
       background: theme.palette.secondary.main,
-      width: '12rem',
+      width: "12rem",
     },
     drawerItem: {
       ...theme.typography.tab,
-      color: '#333',
-      fontSize: '1rem',
-      padding: '.7rem 0',
-      fontStyle: 'italic',
+      color: "#333",
+      fontSize: "1rem",
+      padding: ".7rem 0",
+      fontStyle: "italic",
     },
     home: {
       color: home,
@@ -141,7 +141,7 @@ const HeaderComponent = (props) => {
   const classes = useStyles();
   const themes = useTheme();
   const iOS = process.browser && /iPad|iPhone|iPod/.test(navigator.userAgent);
-  const matches = useMediaQuery(themes.breakpoints.down('md'));
+  const matches = useMediaQuery(themes.breakpoints.down("md"));
 
   const [openDrawer, setOpenDrawer] = useState(false);
 
@@ -152,19 +152,19 @@ const HeaderComponent = (props) => {
   const changeActiveTab = (e, value) => {
     setActiveTab(value);
   };
-  const tabColors = '#cca880';
+  const tabColors = "rgb(143, 143, 143)";
   useEffect(() => {
-    if (window.location.pathname === '/') {
-      props.setTitle('Forside | FLISA BIL AS');
+    if (window.location.pathname === "/") {
+      props.setTitle("Forside | FLISA BIL AS");
       setHome(tabColors);
-    } else if (window.location.pathname === '/bruktbiler') {
-      props.setTitle('Bruktbiler | FLISA BIL AS');
+    } else if (window.location.pathname === "/bruktbiler") {
+      props.setTitle("Bruktbiler | FLISA BIL AS");
       setBruktbiler(tabColors);
-    } else if (window.location.pathname === '/bildeler') {
-      props.setTitle('Verksted | FLISA BIL AS');
+    } else if (window.location.pathname === "/bildeler") {
+      props.setTitle("Verksted | FLISA BIL AS");
       setVerksted(tabColors);
-    } else if (window.location.pathname === '/kontakt') {
-      props.setTitle('Kontakt | FLISA BIL AS');
+    } else if (window.location.pathname === "/kontakt") {
+      props.setTitle("Kontakt | FLISA BIL AS");
       setKontakt(tabColors);
     }
   }, [activeTab]);
@@ -276,7 +276,7 @@ const HeaderComponent = (props) => {
           <ListItem onClick={() => setOpenDrawer(false)} divider button>
             <Link href="/bildeler">
               <ListItemText className={classes.drawerItem} disableTypography>
-                SERVICE
+                VERKSTED
               </ListItemText>
             </Link>
           </ListItem>
