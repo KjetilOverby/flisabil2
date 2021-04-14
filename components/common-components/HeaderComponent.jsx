@@ -55,7 +55,7 @@ const HeaderComponent = (props) => {
         width: "100vw",
       },
       [theme.breakpoints.down("xs")]: {
-        height: "7em",
+        height: "8em",
       },
     },
     appbar: {
@@ -90,6 +90,9 @@ const HeaderComponent = (props) => {
       height: "40px",
       width: "60px;",
       color: theme.palette.secondary.main,
+      [theme.breakpoints.down("xs")]: {
+        marginTop: "-3rem",
+      },
     },
     logo: {
       height: "4rem",

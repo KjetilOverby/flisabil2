@@ -1,32 +1,33 @@
-import React from 'react';
-import { Grid, makeStyles, Typography } from '@material-ui/core';
+import React from "react";
+import { Grid, makeStyles, Typography } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   container: {
-    marginTop: '1rem',
-    display: 'flex',
-    flexDirection: 'column',
-    [theme.breakpoints.down('xs')]: {
-      marginTop: '-3rem',
+    marginTop: "1rem",
+    display: "flex",
+    flexDirection: "column",
+    [theme.breakpoints.down("xs")]: {
+      marginTop: "-3rem",
     },
   },
   logo: {
-    height: '5rem',
-    marginLeft: '10rem',
+    height: "6rem",
+    marginLeft: "10rem",
     [theme.breakpoints.down([1600])]: {
-      marginLeft: '3rem',
+      marginLeft: "3rem",
     },
-    [theme.breakpoints.down('xs')]: {
-      height: '3rem',
+    [theme.breakpoints.down("xs")]: {
+      height: "3.5rem",
+      marginLeft: "1rem",
     },
     [theme.breakpoints.down([350])]: {
-      height: '2rem',
+      height: "2rem",
     },
   },
   logo2: {
-    height: '4rem',
-    marginTop: '-1.3rem',
-    marginLeft: '-.4rem',
+    height: "4rem",
+    marginTop: "-1.3rem",
+    marginLeft: "-.4rem",
   },
 }));
 

@@ -1,36 +1,36 @@
-import React from 'react';
-import { Container, Grid, makeStyles, Typography } from '@material-ui/core';
+import React from "react";
+import { Container, Grid, makeStyles, Typography } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   container: {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    height: '35vh',
-    flexDirection: 'column',
-    marginTop: '2rem',
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    height: "35vh",
+    flexDirection: "column",
+    marginTop: "2rem",
 
-    [theme.breakpoints.down('xs')]: {},
+    [theme.breakpoints.down("xs")]: {},
   },
   header: {
-    color: '#d6d6d6',
-    fontWeight: '400',
-    marginRight: '1.5rem',
-    fontStyle: 'italic',
-    fontWeight: 'bold',
-    fontSize: '5.5rem',
-    [theme.breakpoints.down('md')]: {
-      fontSize: '4.5rem',
+    color: "#d6d6d6",
+    fontWeight: "400",
+    marginRight: "1.5rem",
+    fontStyle: "italic",
+    fontWeight: "bold",
+    fontSize: "5.5rem",
+    [theme.breakpoints.down("md")]: {
+      fontSize: "4.5rem",
     },
-    [theme.breakpoints.down('sm')]: {
-      fontSize: '4rem',
-      marginRight: '.7rem',
+    [theme.breakpoints.down("sm")]: {
+      fontSize: "3rem",
+      marginRight: ".6rem",
     },
-    [theme.breakpoints.down('xs')]: {
-      fontSize: '1.5rem',
-      marginRight: '.5rem',
-      color: '#ffffff',
-      marginTop: '5rem',
+    [theme.breakpoints.down("xs")]: {
+      fontSize: "1.5rem",
+      marginRight: ".5rem",
+      color: "#ffffff",
+      marginTop: "5rem",
     },
   },
   header1: {},
@@ -39,19 +39,19 @@ const useStyles = makeStyles((theme) => ({
   header4: {},
 
   headerContainer: {
-    display: 'flex',
-    justifyContent: 'center',
-    marginTop: '5rem',
-    [theme.breakpoints.down('lg')]: {
-      marginTop: '1rem',
+    display: "flex",
+    justifyContent: "center",
+    marginTop: "5rem",
+    [theme.breakpoints.down("lg")]: {
+      marginTop: "1rem",
     },
-    [theme.breakpoints.down('xs')]: {
+    [theme.breakpoints.down("xs")]: {
       marginTop: 0,
     },
   },
   text: {
-    color: '#fff',
-    fontWeight: '100',
+    color: "#fff",
+    fontWeight: "100",
   },
 }));
 const TextOnHeaderComponent = () => {
