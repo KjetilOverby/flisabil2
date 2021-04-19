@@ -1,44 +1,44 @@
-import React from 'react';
-import { Container, Grid, makeStyles, Typography } from '@material-ui/core';
+import React from "react";
+import { Container, Grid, makeStyles, Typography } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   container: {
-    background: '#f1f1f1',
-    padding: '3rem',
-    marginTop: '10rem',
-    position: 'absolute',
-    top: '50%',
-    left: '50%',
-    width: '65rem',
-    transform: 'translateX(-50%)',
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    [theme.breakpoints.down('lg')]: {
-      marginTop: '5rem',
+    background: "#f1f1f1",
+    padding: "3rem",
+    marginTop: "10rem",
+    position: "absolute",
+    top: "50%",
+    left: "50%",
+    width: "65rem",
+    transform: "translateX(-50%)",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    [theme.breakpoints.down("lg")]: {
+      marginTop: "5rem",
     },
-    [theme.breakpoints.down('md')]: {
-      width: '70vw',
-      top: '55%',
+    [theme.breakpoints.down("md")]: {
+      width: "70vw",
+      top: "55%",
     },
-    [theme.breakpoints.down('sm')]: {
-      width: '100vw',
+    [theme.breakpoints.down("sm")]: {
+      width: "100vw",
     },
-    [theme.breakpoints.down('xs')]: {
-      width: '100vw',
+    [theme.breakpoints.down("xs")]: {
+      width: "100vw",
       marginTop: 0,
-      position: 'initial',
+      position: "initial",
       left: 0,
       top: 0,
-      transform: 'translateX(0)',
-      padding: '1rem',
+      transform: "translateX(0)",
+      padding: "1rem",
     },
   },
   text: {
-    fontStyle: 'italic',
-    color: '#6e6e6e',
-    [theme.breakpoints.down('xs')]: {
-      fontSize: '.7rem',
+    fontStyle: "italic",
+    color: "#6e6e6e",
+    [theme.breakpoints.down("xs")]: {
+      fontSize: ".9rem",
     },
   },
 }));
