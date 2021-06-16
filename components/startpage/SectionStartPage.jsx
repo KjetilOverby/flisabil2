@@ -48,7 +48,7 @@ const SectionStartPage = () => {
   const isMobile = useMediaQuery("(min-width:800px)");
   return (
     <Container className={classes.containerTag}>
-      <Grid container className={classes.container} spacing={isMobile ? 6 : 0}>
+      {/* <Grid container className={classes.container} spacing={isMobile ? 6 : 0}>
         <Grid item>
           <img
             className={classes.img}
@@ -68,7 +68,7 @@ const SectionStartPage = () => {
             alt=""
           />
         </Grid>
-      </Grid>
+      </Grid> */}
     </Container>
   );
 };
